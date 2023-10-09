@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Owner_full_payment" pageWidth="420" pageHeight="500" columnWidth="380" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="69f11660-b96f-4ee8-be79-245848e5d616">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<parameter name="Parameter8" class="java.lang.String"/>
+	<parameter name="Parameter9" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="380" height="110" uuid="1cad4961-5463-488e-911e-348a33b18e40"/>
+				<staticText>
+					<reportElement x="102" y="28" width="171" height="32" uuid="9644269d-11f5-4357-8ef2-33cbbd43ccaa"/>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Address : main rode, kegalla.    Tel : 0352224457]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="90" y="0" width="200" height="28" uuid="2f2d306a-8ce3-47ed-b064-f4553b0fca0f"/>
+					<textElement>
+						<font size="18"/>
+					</textElement>
+					<text><![CDATA[Vehicle Renting Systerm]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="281" y="79" width="31" height="19" uuid="a2a8c516-e9a3-42da-9965-743020f93129"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Time :]]></text>
+				</staticText>
+				<textField pattern="HH:mm">
+					<reportElement x="334" y="80" width="45" height="18" uuid="6d1f88c2-b917-43d3-8633-0ef9c223b158"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<textField pattern="MMMMM dd, yyyy">
+					<reportElement x="50" y="80" width="74" height="19" uuid="bd1c3097-ced0-49f4-a5c5-3b540cd52920"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="20" y="80" width="30" height="19" uuid="4e70a56d-5d25-4849-9df6-1ebdfca5980f"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Date :]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="14" y="99" width="355" height="1" uuid="79f04ebb-a9f7-4169-b5ab-81ec365c207c"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="280" y="65" width="52" height="13" uuid="39812d81-efce-4906-bac2-9dced5e37956"/>
+					<text><![CDATA[Invoice no:]]></text>
+				</staticText>
+				<image>
+					<reportElement x="9" y="3" width="70" height="62" uuid="607dfed8-4a7b-47d2-9ea2-affb1025ed4c"/>
+					<imageExpression><![CDATA["C:/Users/Thanujitha/Downloads/istockphoto-1290071290-612x612.jpg"]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="333" y="65" width="29" height="13" uuid="045663ec-e963-484c-af4d-96ea6300266e"/>
+					<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="181" height="41" uuid="c435814d-0596-4fc0-908d-69293d481398"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="1" width="78" height="20" uuid="eaa13036-c6fc-490e-ab4f-ece6d1991ef7"/>
+				<text><![CDATA[Supplier NIC :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="21" width="78" height="20" uuid="22767a76-51a9-4137-aa83-5cd9870986d3"/>
+				<text><![CDATA[Supplier name :]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="180" y="0" width="201" height="41" uuid="fb99baca-0149-42a5-bbf0-05025753aaa7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="200" y="10" width="73" height="20" uuid="491c7375-6cda-47e6-a765-b372d9f5d393"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Vehicle No :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="1" width="100" height="20" uuid="ac6b9ed6-c7bf-42ee-a58a-5ae04e3bffc7"/>
+				<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="21" width="100" height="20" uuid="6ecb5f26-e7d5-4b4d-97f0-2470a6a6e164"/>
+				<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="273" y="10" width="97" height="20" uuid="c1f82a18-6869-4aad-b113-bce5c50fa731"/>
+				<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="322" y="3" width="57" height="20" uuid="2945b916-ccf3-4cbd-ab5f-a80af0ba4a78"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="3" width="68" height="20" uuid="27ae8257-4324-4177-b60a-3659bb592319"/>
+				<text><![CDATA[Full payment ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="3" width="53" height="20" uuid="c89f8370-4550-406e-8381-ec72b4ba9736"/>
+				<text><![CDATA[Months]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="20" width="355" height="1" uuid="be1da6a2-fb83-4048-9905-74ab41206450"/>
+			</rectangle>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="149" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="7" width="150" height="18" uuid="47a117bc-5366-47c5-8be8-b57c8e9b4584"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Total monthly payments ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="36" width="151" height="20" uuid="706d6b5b-2ed7-4f3f-8afc-9f4940a3acd6"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Full payment (Until today) :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="7" width="54" height="18" uuid="eab09360-6ce2-40b3-a4d1-dbeacbd7ec96"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="7" width="68" height="18" uuid="c96487ec-dceb-4bae-9bb2-8bd8ba7e1f93"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="36" width="68" height="20" uuid="8218c99b-842c-43b0-b18b-b4788ae1d1d8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="29" y="72" width="150" height="18" uuid="bde6ccfc-5735-47e4-9642-7b79a867bcab"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Totel Payment :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="38" width="13" height="17" uuid="937dd40f-ecb9-474d-9a34-f4df99408649"/>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="322" y="71" width="58" height="18" uuid="d16cc1fe-0830-449a-9221-3b098461fbe4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter8}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="327" y="96" width="48" height="1" uuid="3b85fe1d-b496-447a-9dc5-95e21d3cf1e6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="321" y="92" width="57" height="1" uuid="65ee0363-ad3a-449e-8e89-b18e52cf74ee"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="321" y="70" width="57" height="1" uuid="7c04639e-0c17-4457-98ed-9eb5f298f8f8"/>
+			</rectangle>
+			<textField>
+				<reportElement x="1" y="119" width="378" height="21" uuid="96a0a37a-8743-40c3-95b6-78e4ba60b89b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter9}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="34" splitType="Stretch">
+			<rectangle>
+				<reportElement x="13" y="6" width="355" height="1" uuid="aa91e67b-1627-44cc-a5b4-0b4267cd0238"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="33" width="355" height="1" uuid="0a3be6ef-a7b1-49f8-bdf9-c5a4ba4e6d10"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="93" y="10" width="196" height="23" uuid="80d27305-4504-4dbf-b2a9-d81c293d1c0c"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Thank you for the transaction]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

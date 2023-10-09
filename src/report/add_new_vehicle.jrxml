@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="add_new_vehicle" pageWidth="420" pageHeight="500" columnWidth="380" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01c1d8ba-9f4f-47e2-8e6d-ad07dd351d7b">
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<staticText>
+				<reportElement x="102" y="28" width="171" height="32" uuid="9bc9d3b7-8386-43df-9cd2-294e16a6314e"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Address : main rode, kegalla.    Tel : 0352224457]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="200" height="28" uuid="eee4632e-97c7-41e3-9e36-1fb77c9bc1fa"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Vehicle Renting Systerm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="79" width="31" height="19" uuid="b17394a8-3d81-4741-aef0-b9a01daefd91"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Time :]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="312" y="80" width="45" height="18" uuid="4302fef0-3c60-45c0-b280-a0ca15d68e48"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="50" y="80" width="74" height="19" uuid="44b456a8-9bf5-44c9-a76d-0f21c289ab43"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="80" width="30" height="19" uuid="ba3b42b3-c91f-4dc8-8951-6c2845702d31"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="99" width="355" height="1" uuid="6794d63f-3ce8-4edf-90bc-584cf0eace81"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="108" width="355" height="1" uuid="28a15aba-740c-4f0d-9970-6f090562cf74"/>
+			</rectangle>
+			<image>
+				<reportElement x="10" y="10" width="70" height="62" uuid="cbc2baa5-4f35-4d5b-9be5-007d18c64e6d"/>
+				<imageExpression><![CDATA["C:/Users/Thanujitha/Downloads/istockphoto-1290071290-612x612.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="6" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="191" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="1" width="380" height="190" uuid="e02310b8-077e-4b1a-88c2-e92642ef99c4"/>
+				<staticText>
+					<reportElement x="30" y="70" width="100" height="20" uuid="60448c2b-22e4-418d-b6f3-c7b3bdfb4ec2"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Vehicle Type :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="10" width="100" height="20" uuid="c4d09aa7-c31f-49b8-bb3b-85cba248117a"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Vehicle No :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="30" width="100" height="20" uuid="a321956e-938e-428f-8e3e-bafb9775e5e9"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Vehicle Brand :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="50" width="100" height="20" uuid="6d49aa05-935a-45b7-b380-e951e27664ef"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Vehicle Model :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="106" width="100" height="20" uuid="f54aba77-eb17-4e41-b62f-0f65c950c659"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Supplier NIC :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="146" width="100" height="20" uuid="c01886d0-db8d-425b-852a-148b6c294ec9"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Supplier Contact :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="126" width="100" height="20" uuid="1c39805c-c22b-488c-80a2-b691ceb8f14e"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Supplier Name :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="134" y="10" width="156" height="20" uuid="0c996ca0-43c6-40a9-bc7e-55b36bead8de"/>
+					<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement x="13" y="99" width="355" height="1" uuid="c65a120f-4de6-41b8-8645-6adad29bb743"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="13" y="173" width="355" height="1" uuid="8b461eb5-fc29-4040-a2c1-8353889ec842"/>
+				</rectangle>
+				<textField>
+					<reportElement x="134" y="30" width="156" height="18" uuid="0338eaca-8b78-496d-8859-ca4641a5081b"/>
+					<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="134" y="48" width="156" height="22" uuid="92148a08-0c77-4989-bd7b-04f7cff00b07"/>
+					<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="134" y="70" width="156" height="20" uuid="b35ab343-6571-4d21-aaab-675e36824d7c"/>
+					<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="133" y="146" width="156" height="20" uuid="78481dc3-ae5e-4677-965d-8b70625922d5"/>
+					<textFieldExpression><![CDATA[$P{Parameter7}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="133" y="106" width="156" height="20" uuid="f213f189-d4f5-4daa-986d-945b45b392cb"/>
+					<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="133" y="126" width="156" height="20" uuid="bcbc6c58-8c0c-4f06-8e04-ccfa07786ad2"/>
+					<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement x="13" y="192" width="355" height="1" uuid="ec925b5f-957c-4d49-8e33-de1beb410e10"/>
+				</rectangle>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="85" splitType="Stretch">
+			<staticText>
+				<reportElement x="103" y="62" width="277" height="20" uuid="6a418ee3-601d-43e6-83cb-bc1306c24d1a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Authorized by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="50" width="278" height="20" uuid="ba88c54a-1d8d-40d8-b792-a9a5ae89f8a9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[............................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="10" width="270" height="30" uuid="af447d89-b945-45b1-9111-9799a8ab38ee"/>
+				<text><![CDATA[I will give you a day later to talk deals and pick up the vehicle.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<summary>
+		<band height="9" splitType="Stretch"/>
+	</summary>
+</jasperReport>
